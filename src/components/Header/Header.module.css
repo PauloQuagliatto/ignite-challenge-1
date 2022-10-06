@@ -1,0 +1,61 @@
+.header {
+  position: relative; 
+  width: 100%;
+  height: 12.5rem;
+  background-color: var(--gray-700);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.addtodo {
+  position: absolute;
+  bottom:  -27px;
+
+  width: 55%;
+  height: 54px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addtodo > input {
+  width: 88%;
+  height: 100%;
+
+  padding: 1rem;
+
+  background-color: var(--gray-500);
+
+  color: var(--gray-100);
+
+  border: none;
+  border-radius: 8px;
+
+  outline: 1px solid var(--gray-700);
+}
+
+.addtodo > input:focus {
+  outline: 1px solid var(--purple-dark);
+}
+
+.addtodo > button {
+  width: 12%;
+  height: 100%;
+  margin-left: 1%;
+
+  background-color: var(--blue-dark);
+
+  color: var(--gray-100);
+
+  border: none;
+  border-radius: 8px;
+
+  transition: .2s ease-in;
+}
+
+.addtodo > button:hover {
+  background-color: var(--blue);
+}
