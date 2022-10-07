@@ -9,6 +9,21 @@
   align-items: center;
 } 
 
+.header > .title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.header > .title > h1 {
+  margin-left: 12px;
+
+  background: -webkit-linear-gradient(90deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .addtodo {
   position: absolute;
   bottom:  -27px;
@@ -42,9 +57,15 @@
 }
 
 .addtodo > button {
-  width: 12%;
+  width: 10%;
   height: 100%;
+
   margin-left: 1%;
+  padding: 16px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   background-color: var(--blue-dark);
 

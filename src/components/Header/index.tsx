@@ -1,4 +1,6 @@
 import { FormEvent, useState } from "react";
+import { ReactComponent as RocketIcon } from "../../assets/icons/rocket.svg";
+import { ReactComponent as PlusIcon } from "../../assets/icons/plus-icon.svg";
 import styles from "./Header.module.css";
 
 interface IProps {
@@ -17,13 +19,14 @@ function Header({ addTodo }: IProps) {
 
   return (
     <div className={styles.header}>
-      <h1>
-        Todo
-      </h1>
+      <div className={styles.title}>
+        <RocketIcon /> <h1>todo</h1>
+      </div>
       <form className={styles.addtodo} onSubmit={onSubmit}>
         <input placeholder="Adicionar uma nova tarefa" value={input} onChange={(e) => setInput(e.target.value)} />
         <button type="submit">
-          Create
+          Criar
+          <PlusIcon />
         </button>
       </form>
     </div>

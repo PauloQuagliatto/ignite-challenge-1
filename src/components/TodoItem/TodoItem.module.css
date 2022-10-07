@@ -20,15 +20,22 @@
   
   margin: 0 0.85rem;
   justify-content: flex-start;
+
 }
 
 .todocontainer > p {
+  align-self: center;
   word-break: break-all;
 }
 
+.todocontainer > .concluded {
+  color: var(--gray-300);
+  text-decoration-line: line-through;
+}
+
 .checkball {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 27px;
+  height: 26px;
 
   border: 1px solid var(--blue);
   border-radius: 999px;
@@ -62,6 +69,12 @@
   border: 1px solid var(--purple-dark);
 }
 
+.checked > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .checked:hover {
   background-color: var(--purple);
 
@@ -74,4 +87,20 @@
   background-color: var(--purple);
 
   transition: .2s ease-in;
+}
+
+.container > button {
+  background: none;
+
+  color: var(--gray-300);
+
+  border: none;
+
+  border-radius: 4px;
+}
+
+.container > button:hover {
+  background-color: var(--gray-400);
+
+  color: var(--danger);
 }
