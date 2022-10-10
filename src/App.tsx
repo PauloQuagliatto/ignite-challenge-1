@@ -16,6 +16,8 @@ function App() {
   const [todoList, setTodoList] = useState<ITodo[]>([]);
 
   function addTodo(name: string) {
+    if (!name) return;
+
     setTodoList(prevState => [...prevState, {
       id: uuid(),
       name,
